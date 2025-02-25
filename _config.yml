@@ -1,3 +1,11 @@
-title: DIY Smart Home Solutions
-description: Affordable, step-by-step guides, reviews, and projects for turning your home into a smart home—all on a budget!
-theme: jekyll-theme-minimal
+title: "DIY Smart Home Solutions"
+description: "Affordable, step-by-step guides, reviews, and projects for turning your home into a smart home—all on a budget!"
+theme: null   # We'll use our own custom layout, so set this to null
+markdown: kramdown
+# ^ Jekyll's default is kramdown. Keep it or use another if you prefer.
+
+# Make sure baseurl is empty if you're using username.github.io as the root
+baseurl: ""
+url: "https://jaypelfox.github.io"  # Or your custom domain if you have one
+
+# Optional: disqus, google_analytics, etc.
