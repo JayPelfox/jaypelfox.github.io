@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <!-- The line above pulls in our <head> info from a separate file -->
+  </head>
+  <body>
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="{{ site.url }}{{ site.baseurl }}/">
+          <span class="brand">DIY Smart Home Solutions</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ site.url }}{{ site.baseurl }}/#services">Services</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/#blog">Blog</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ======== HERO SECTION ======== -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Upgrade Your Home,<br> The Smart Way</h1>
+        <p>Affordable, step-by-step guides and reviews for automating your home on a budget.</p>
+        <a href="#services" class="btn-hero">Learn More</a>
+      </div>
+    </section>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main class="container">
+      <!-- This is where each page’s content or blog post will appear -->
+      {{ content }}
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+      <p>© {{ site.time | date: "%Y" }} DIY Smart Home Solutions. All rights reserved.</p>
+      <p>Hosted on GitHub Pages &bull; 
+         <a href="https://github.com/{{ site.github.username }}">
+           GitHub Profile
+         </a>
+      </p>
+    </footer>
+  </body>
+</html>
